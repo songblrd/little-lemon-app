@@ -9,12 +9,15 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: .5rem 0;
+  
 }
 
 .header-wrapper img {
   margin: auto 0;
   cursor: pointer;
-  
+  width: 20%;
+  position: absolute;
+  left: 30px;
 }
 
 .header-wrapper a {
@@ -23,3 +26,131 @@ body {
   padding-top: 4px;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links.visible {
+  flex-direction: column;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  background-color: #495E57;
+  align-items: center;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+nav li {
+  padding: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: underline solid #495E57;
+  text-underline-offset: .3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.Middlesection {
+  background-color: #495E57;
+  padding: 5rem 0;
+  color: #FBDABB;
+}
+
+.Middlesection div {
+  max-width: 1000px;
+  position: relative;
+}
+
+.Middlesection h2 {
+  color: #F4CE14;
+}
+
+button {
+  background-color: #F4CE14;
+  color: black;
+  padding: 14px 18px;
+  border: none;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Middlesection img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.bookingform {
+  max-width: 1000px;
+  margin: 3rem auto;
+}
+
+.bookingform fieldset {
+  padding: 3rem;
+}
+
+.bookingform div {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+#bookdate, #booktime, #bookoccasion {
+  background: #bdbdbd43;
+  padding: 8px 4px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#bookguests {
+  background: #bdbdbd43;
+  width: 4rem;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.reservationbutton {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
