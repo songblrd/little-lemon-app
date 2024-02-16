@@ -154,3 +154,109 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+
+footer section {
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto 4rem;
+}
+
+.company-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.company-details p {
+  width: 200px;
+}
+
+footer h3 {
+ margin: .76rem 0;
+}
+
+footer ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  padding: .5rem 0;
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer li:nth-child(1) {
+  padding-top: 0;
+}
+
+footer a:hover {
+  text-decoration: underline solid #495E57;
+  text-underline-offset: .3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.copyright {
+  display: flex;
+  justify-content: left;
+  background: #495E57;
+  padding: 1rem 0;
+}
+
+.copyright a {
+  font-weight: 500;
+  color: white;
+}
+
+.copyright a:hover{
+  text-decoration: underline solid white;
+  text-underline-offset: .4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 320px) {
+
+ header {
+  padding: 0.5rem;
+ }
+
+ .menu-icon {
+  display: block;
+ }
+
+ .nav-links {
+  display: none;
+ }
+
+ .nav-links.visible {
+  display: flex;
+  background: #333333;
+  z-index: 1000;
+  padding: 60px 0;
+ }
+
+ .navbar {
+  background: #fff;
+ }
+
+ nav a {
+  color: white;
+ }
+ 
+ nav a:hover {
+  text-decoration: underline solid white;
+  text-underline-offset: .4rem;
+  transition: all 0.3s ease-in-out;
+ }
+
+
+}
