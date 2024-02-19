@@ -10,7 +10,7 @@ const Footer = () => {
                     <img src='logo.png' alt='logo two'/>
                     <p>We are a family owned restaurant based in Chicago.</p>
                 </div>
-                <div className="company-details">
+                <div className="details">
                     <ul>
                      <li><a href='/'>Home</a></li>
                      <li><a href='/'>About</a></li>

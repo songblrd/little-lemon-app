@@ -9,15 +9,14 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: .5rem 0;
-  
 }
 
 .header-wrapper img {
   margin: auto 0;
   cursor: pointer;
-  width: 20%;
+  width: 10%;
+  right: 30px;
   position: absolute;
-  left: 30px;
 }
 
 .header-wrapper a {
@@ -258,5 +257,239 @@ footer a:hover {
   transition: all 0.3s ease-in-out;
  }
 
+ .hamburger-bar {
+    background: #333333;
+  }
+ 
+  .mobile-hidden {
+    display: none;
+  }
+  
+  .Middlesection {
+    padding: 2rem 0;
+  }
 
+  .Middlesection div {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .Middlesection h2 {
+    margin: 0;
+    font-size: 35px;
+  }
+
+  .Middlesection h3 {
+    width: 100vw;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 4px;
+  }
+
+  .Middlesection p {
+    width: 200px;
+    margin: 1rem 1vw 2rem;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .Middlesection-img {
+    display: none;
+  }
+  
+  .Middlesection-img-mobile {
+    width: 20%;
+  }
+
+  .Middlesection button {
+    font-size: 16px;
+    margin: 0 18vw;
+  }
+
+  .bookingform {
+    margin: 1rem .5rem;
+  }
+
+  .bookingform fieldset {
+    padding: 0;
+  }
+
+  footer section {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto 4rem; 
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+  }
+
+  .info img {
+    cursor: pointer;
+    width: 200px;
+  }
+
+  .info p {
+    text-align: center;
+    width: 200px;
+  }
+
+  .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 300px;
+    gap: 1rem;
+  }
+
+  .details div {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+
+  .details h3, li {
+    text-align: center;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .nav-links.visible {
+    padding: 50px 0;
+  }
+
+  .Middlesection p {
+    padding: 0 18vw;
+    margin: 1rem 1rem 2rem;
+    width: 300px;
+  }
+
+  .mobile-hidden {
+    display: inline-block;
+  }
+
+  .details {
+    width: 600px;
+    flex-wrap: nowrap;
+  }
+
+  .details div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    width: 300px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .Middlesection p {
+    margin: 1rem 4rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bookingform {
+    margin: 3rem auto;
+  }
+
+  .bookingform fieldset {
+    padding: 1rem;
+  }
+
+  .info {
+    align-items: flex-start;
+  }
+}
+
+
+@media  screen and (max-width: 1280px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  nav a {
+    color: black;
+  }
+
+  nav a:hover {
+    text-decoration: underline solid black;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li:nth-child(7) {
+    padding-right: 0;
+  }
+
+  .Middlesection {
+    padding: 5rem 0;
+  }
+
+  .Middlesection div {
+    margin: 0 auto 0;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .Middlesection h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+  .Middlesection h3 {
+    text-align: left;
+    font-size: 20px;
+    margin: 4px 0 8px;
+  }
+
+  .Middlesection p {
+    font-size: 20px;
+    width: 520px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 1rem 0 2rem;
+    padding: 0;
+  }
+
+  .Middlesection-img-mobile {
+    display: none;
+  }
+
+  .Middlesection button {
+    font-size: 16px;
+    margin: 0 30vw 0;
+  }
+
+  .Middlesection-img {
+    display: block;
+  }
 }
