@@ -8,7 +8,7 @@ const Footer = () => {
             <section>
                 <div className="info">
                     <img src='logo.png' alt='logo two'/>
-                    <p>We are a family owned restaurant based in Chicago.</p>
+                    <p>We are family owned based in Chicago.</p>
                 </div>
                 <div className="details">
                     <ul>
