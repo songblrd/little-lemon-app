@@ -247,7 +247,7 @@ footer li {
 
 footer a {
   text-decoration: none;
-  color: black;
+  color: #fbdabb ;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -259,6 +259,10 @@ footer a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+footer p {
+  color: #fbdabb;
+}
+
 .copyright {
   display: flex;
   justify-content: left;
@@ -268,6 +272,7 @@ footer a:hover {
   width: 100%;
   left: 2px;
   z-index: -1;
+  color: #fbdabb;
 }
 
 .copyright a {

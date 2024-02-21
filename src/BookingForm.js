@@ -4,10 +4,10 @@ const BookingForm = (props) => {
 
   const [date, setDate] = useState("");
   const [times, setTimes] = useState("");
-  const [setGuests] = useState("");
   const [setOccasion] = useState("");
+  const [guests ,setGuests] = useState("");
 
-  const handleSubmit = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
     props.SubmitForm(e);
   }
@@ -16,7 +16,12 @@ const BookingForm = (props) => {
     setDate(e);
   }
 
+  const handleGuestsChange = (e) => {
+    setGuests(e);
+  }
+
   const availableTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
+
 
   return (
     <section className='bookingform'>
@@ -40,12 +45,12 @@ const BookingForm = (props) => {
           
           <div>
             <label htmlFor="bookguests">Number of Guests:</label>
-            <input type="number" id='bookguests' min={1} placeholder="1" onChange={e => setGuests(e.target.value)} required/>
+            <input type="number" id='bookguests' min={1} placeholder="1" value={guests} onChange={e => handleGuestsChange(e.target.value)} required/>
           </div>
          
           <div>
             <label htmlFor="bookoccasion">Occasion:</label>
-            <select name="" id="bookoccasion" onChange={e => setOccasion(e.target.value)} required>
+            <select name="" id="bookoccasion" value={setOccasion} onChange={e => setOccasion(e.target.value)} required>
               <option value="">Birthday</option>
               <option value="">Anniversary</option>
             </select>
